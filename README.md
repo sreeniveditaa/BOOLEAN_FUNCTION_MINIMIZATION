@@ -47,12 +47,14 @@ endmodule
 ```
 
 **RTL realization**
+
 ![image](https://github.com/sreeniveditaa/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473268/686f655f-d8d2-4015-a331-680a6e54b0df)
 
 **Output:**
 
 
 **Timing Diagram**
+
 ![image](https://github.com/sreeniveditaa/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473268/bb008a70-fec6-43ef-9953-ab634041cc83)
 
 **Result:**
