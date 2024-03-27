@@ -31,20 +31,29 @@ Hardware – PCs, Cyclone II , USB flasher
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
+**Program:** 
+```
+Developed by: SREE NIVEDITAA SARAVANAN
+RegisterNumber: 212223230213
+```
+```
+module booleanfun(F1,F2,A,B,C,D);
+output F1,F2;
+input A,B,C,D;
+assign F1=(~A&~B&~C&~D)|(A&~C&~D)|(~B&C&~D)|(~A&B&C&D)|(B&~C&D);
+assign F2=(B&~C&D)|(~B&~C&D)|(~A&B&C)|(A&~B&C)|(A&B&C);
+endmodule
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:*/
-
+```
 
 **RTL realization**
+![image](https://github.com/sreeniveditaa/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473268/686f655f-d8d2-4015-a331-680a6e54b0df)
 
 **Output:**
 
-**RTL**
 
 **Timing Diagram**
+![image](https://github.com/sreeniveditaa/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473268/bb008a70-fec6-43ef-9953-ab634041cc83)
 
 **Result:**
 
