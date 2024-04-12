@@ -37,25 +37,37 @@ Developed by: SREE NIVEDITAA SARAVANAN
 RegisterNumber: 212223230213
 ```
 ```
-module booleanfun(F1,F2,A,B,C,D);
-output F1,F2;
-input A,B,C,D;
-assign F1=(~A&~B&~C&~D)|(A&~C&~D)|(~B&C&~D)|(~A&B&C&D)|(B&~C&D);
-assign F2=(B&~C&D)|(~B&~C&D)|(~A&B&C)|(A&~B&C)|(A&B&C);
+module booleanfun(a,b,c,d,w,x,y,z,f1,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u;
+not(adash,a);
+not(bdash,b);
+not(cdash,c);
+not(ddash,d);
+not(ydash,y);
+and(p,bdash,ddash);
+and(q,adash,b,d);
+and(r,a,b,cdash);
+or(f1,p,q,r);
+and g1(s,ydash,z);
+and g2(t,x,y);
+and g3(u,w,z);
+or g4(f2,s,t,u);
 endmodule
 
 ```
 
 **RTL realization**
 
-![image](https://github.com/sreeniveditaa/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473268/686f655f-d8d2-4015-a331-680a6e54b0df)
+![Screenshot 2024-04-12 131112](https://github.com/sreeniveditaa/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473268/ce16b4ad-c7d9-4776-9cde-f1c00779fc85)
 
-**Output:**
 
 
 **Timing Diagram**
 
-![image](https://github.com/sreeniveditaa/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473268/bb008a70-fec6-43ef-9953-ab634041cc83)
+![Screenshot 2024-04-12 131538](https://github.com/sreeniveditaa/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473268/0a3c6421-709a-481d-a81c-086634d9d85b)
+
 
 **Result:**
 
